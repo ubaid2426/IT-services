@@ -1,0 +1,288 @@
+/* * {
+    padding: 0;
+    margin: 0;
+  }
+  .card-1{
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; Fix this to center items
+    color: white;
+    background-color: rgb(2, 25, 54);
+    width: 20vw;
+    height: 20vh;
+}
+  
+ 
+  .card-header {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    justify-content: space-between; 
+    margin-bottom: 10px;
+  }
+  
+  .card-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+  }
+
+  .card p {
+    margin-top: 10px;
+    text-align: left;
+  }
+  @media only screen and (max-width: 360px) {
+    .card-1 {
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center; 
+      color: white;
+      background-color: rgb(2, 25, 54);
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100vw;
+      height: 100vh;
+    }
+    .card p {
+      margin-top: 0px;
+      text-align: left;
+    }
+  }
+  
+
+  @media only screen and (max-width: 767px) {
+    .card-1{
+      padding: 1.5rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; Fix this to center items
+      color: white;
+      background-color: rgb(2, 25, 54);
+
+      width: 70vw;
+      height: 15vh;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .card-1{
+      padding: 1.5rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; Fix this to center items
+      color: white;
+      background-color: rgb(2, 25, 54);
+      background-color: rgb(2,25,54);
+      width: 40vw;
+      height: 17vh;
+  }
+}
+  @media only screen and (min-width: 980px) and (max-width: 1450px) {
+    .card-1{
+     padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; Fix this to center items
+    color: white;
+    background-color: rgb(2, 25, 54);
+      background-color: rgb(2,25,54);
+      width: 30vw;
+      height: 18vh;
+      gap:10px;
+  }
+
+  } */
+
+  /* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 1rem; 
+    padding: 1rem;
+  }
+  
+  .card-1 {
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(2, 25, 54);
+    width: 90%; 
+    max-width: 320px;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .card-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .card-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+  }
+  
+
+  .card p {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  
+  @media only screen and (max-width: 360px) {
+    .card-1 {
+      padding: 1rem;
+      width: 95%;
+      height: auto;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 767px) {
+    .card-1 {
+      width: 90%; 
+      height: auto; 
+    }
+  }
+  
+
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .card-1 {
+      width: 45vw; 
+      height: auto; 
+    }
+  }
+  
+ 
+  @media only screen and (min-width: 980px) {
+    .card-1 {
+      width: 30vw; 
+      height: auto;
+    }
+  }
+   */
+   /* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Card Styles */
+.card-1 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(2, 25, 54);
+  max-width: 350px;
+  margin-bottom: 1rem;
+}
+.card-header {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card-header img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.card-1 p {
+  grid-column: 1 / -1; 
+  text-align: left;
+  margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 360px) {
+  .card-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: start;
+  }
+
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media only screen and (min-width:361px) and (max-width: 767px) {
+  .card-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; 
+  }
+
+  .card-header {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-1 {
+    grid-template-columns: auto 1fr; 
+    align-items: center;
+  }
+
+  .card-header {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+
+@media only screen and (min-width: 1025px) {
+  .card-1 {
+    grid-template-columns: auto 1fr; 
+  }
+
+  .card-header {
+    grid-template-columns: auto 1fr;
+  }
+}

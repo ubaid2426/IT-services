@@ -1,0 +1,112 @@
+.AboutUs{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    text-align:center;
+    background-color:rgb(0,22,48);
+    color:white;
+    height:50vh;
+    width:100%;
+    /* border-bottom:1px solid white; */
+
+}
+.about-us-section {
+  background-color:rgb(0,22,48);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Full viewport height */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.about-us-content {
+  max-width: 800px;
+}
+
+.about-us-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add this to ensure correct width and height calculations */
+  }
+  
+  .cart {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 80vw;
+    height: 18vh;
+    gap: 25px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the cards to wrap on small screens */
+    justify-content: space-around; /* Ensures equal spacing */
+    gap: 1rem; /* Adds spacing between cards */
+    padding: 1rem;
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr; 
+      height:auto;
+      gap:10px;
+      place-items: center;
+      padding-top:10px;
+      overflow:hidden;
+        display: flex;
+        flex-wrap: wrap; /* Allows the cards to wrap on small screens */
+        justify-content: space-around; /* Ensures equal spacing */
+        gap: 1rem; /* Adds spacing between cards */
+        padding: 1rem;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr; 
+      height:60vh;
+      gap:10px;
+      place-items: center;
+      padding-top:10px;
+      overflow:hidden;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cart {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr ;
+      height: 40vh;
+      width: 80vw;
+      gap: 10px;
+    }
+    /* .he{
+      height:40vh;
+    } */
+  }
+  
+

@@ -1,0 +1,110 @@
+/* .Home-card{
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr; 
+          height:auto;
+          gap:10px;
+          place-items: center;
+          padding-top:10px;
+          overflow:hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            gap: 1rem; 
+            padding: 1rem;
+}
+@media only screen and (max-width: 360px) {
+    .Home-card{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr; 
+        height:100vh;
+        gap:10px;
+        place-items: center;
+        padding-top:10px;
+        overflow:hidden;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around; 
+          gap: 1rem;
+          padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    .Home-card{
+        display: grid;
+        grid-template-rows: 1fr  1fr;
+        grid-template-columns:1fr 1fr; 
+        height:60vh;
+        gap:10px;
+        place-items: center;
+        padding-top:10px;
+        overflow:hidden;
+          flex-wrap: wrap; 
+          justify-content: space-around; 
+          gap: 1rem; 
+          padding: 1rem;
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .Home-card{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns:1fr 1fr 1fr; 
+        height:30vh;
+        gap:10px;
+        
+        place-items: center;
+        padding-top:10px;
+        overflow:hidden;
+          
+          flex-wrap: wrap; 
+          justify-content: space-around;
+          gap: 1rem;
+          padding: 1rem;
+}
+} */
+
+.Home-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1rem;
+  place-items: center;
+  height: auto; /* Remove fixed height */
+}
+
+/* Small screens: Single column */
+@media only screen and (max-width: 360px) {
+  .Home-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding-top: 10px;
+  }
+}
+
+/* Small Devices: Two columns */
+@media only screen and (min-width: 361px) and (max-width: 767px) {
+  .Home-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 10px;
+  }
+}
+
+/* Medium Devices: Two columns */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Home-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+  }
+}
+
+/* Large Devices: Three columns */
+@media only screen and (min-width: 1024px) {
+  .Home-card {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+}

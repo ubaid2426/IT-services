@@ -1,0 +1,501 @@
+  /* .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+  }
+  
+  .feature-1 {
+    background-image: linear-gradient(to bottom, rgb(0, 20, 44) 0%, rgba(0, 20, 44, 0.1) 100%),
+      url('../../assets/1st.jpeg');
+    background-size: cover;
+    background-position: 20% 75%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 10px;
+  }
+  
+  .feature-2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 10px;
+  }
+  .main-cart {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+   
+    justify-content: center;
+    width: 30vw;
+    height: 15vw;
+    gap: 20px;
+  }
+  
+  .feature-2-1 {
+    font-size: 20px;
+    color: rgb(10, 201, 172);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .feature-2-2 {
+    font-size: 35px;
+    padding-top: 10px;
+    width: 30vw;
+    padding-bottom: 20px;
+    text-align: center; 
+  }
+  
+  .feature-2-3 {
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 1.6;
+    padding: 15px;
+  }
+  
+  .feature-2-4 {
+    width: 50vh;
+  }
+  @media only screen and (max-width: 360px) {
+    .feature {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      
+      height: 100vh; 
+      padding:1rem; 
+    }
+    .feature-1 {
+      background-image: linear-gradient(to bottom, rgb(0, 20, 44) 0%, rgba(0, 20, 44, 0.1) 100%),
+        url('../../assets/1st.jpeg');
+      background-size: cover;
+      background-position: 20% 75%;
+      background-repeat: no-repeat;
+      height: 30vh;
+      border-radius: 10px;
+    }
+    .feature-2 {
+      color: white;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      height: 50vh;
+      border-radius: 10px;
+      width:100vw;
+    }
+    .feature-2-1 {
+      font-size: 20px;
+      color: rgb(10, 201, 172);
+      margin: 0;
+      padding: 0;
+    }
+    
+    .feature-2-2 {
+      font-size: 22px;
+      padding-top: 10px;
+      width: 30vw;
+    
+      text-align: center; 
+    }
+    
+    .feature-2-3 {
+      font-size: 16px;
+      padding-top: 10px;
+     
+      padding: 15px;
+    }
+    
+    .feature-2-4 {
+      width: 100vw;
+    }
+    .main-cart {
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      grid-template-columns:  1fr;
+      height: auto;
+      width:100vw;
+      gap: 15px;
+    }
+  }
+  @media only screen and (min-width:361px) and (max-width: 767px) {
+    .feature {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      overflow: hidden;
+      height: auto; 
+      padding:1rem; 
+    }
+   
+    .main-cart {
+      display: grid;
+      grid-template-rows:1fr 1fr;
+      grid-template-columns:  1fr;
+      height: 30vh;
+      width:50vw;
+      gap: 10px;
+    }
+    .feature-1 {
+      background-image: linear-gradient(to bottom, rgb(0, 20, 44) 0%, rgba(0, 20, 44, 0.1) 100%),
+        url('../../assets/1st.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      height:35vh;
+    }
+   .main-cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns:  1fr;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      width: 20vw;
+      height: 12vh;
+      height: auto; 
+      gap: 20px;
+    }
+    .feature-2 {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      height:30vh;
+      height: auto;
+    }
+  
+    .feature-2-1 {
+      font-size: 20px;
+      color: rgb(10, 201, 172);
+      margin: 0;
+      padding: 0;
+    }
+  
+    .feature-2-2 {
+      font-size: 35px;
+      padding-top: 10px;
+      width: 100%; 
+      padding-bottom: 20px;
+      text-align: center; 
+    }
+  
+    .feature-2-3 {
+      font-size: 18px;
+      padding-top: 10px;
+      line-height: 1.6;
+      padding: 10px 15px 10px 5px;
+
+    }
+  
+    .feature-2-4 {
+      width: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 979px){
+    .feature {
+      grid-template-columns: 350px 380px;
+      grid-template-rows: 1fr;
+      height:70vh;
+   
+    }
+    .feature-1 {
+     
+      background-size: contaion;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      height:50vh;
+      background-position: 20% 75%;
+      
+    }
+  
+    .feature-2 {
+      color: white;
+      display: flex;
+      border-radius: 10px;
+      height:30vh;
+      padding:10px;
+    }
+    .feature-2-4 {
+      width: 50vh;
+    }
+    .main-cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns:  1fr;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      width: 30vw;
+      height: 12vh;
+      gap: 20px;
+    }
+    .feature-2-2 {
+      font-size: 20px;
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .feature-2-3 {
+      font-size: 16px;
+      padding: 10px 10px 10px 5px;
+
+    }
+  }
+  
+
+  
+
+
+  @media only screen and (min-width: 980px) and (max-width: 1400px) {
+    .feature {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      height:auto;
+      
+    }
+    .feature-1 {
+     
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      height:70vh;
+      background-position: 20% 75%;
+    }
+  
+    .feature-2 {
+      color: white;
+      display: flex;
+     
+      border-radius: 10px;
+      height:30vh;
+      padding:10px;
+    }
+    .main-cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns:  1fr;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      width: 30vw;
+      height: 12vh;
+      gap: 20px;
+    }
+    .feature-2-2 {
+      font-size: 20px;
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .feature-2-3 {
+      font-size: 16px;
+      padding: 10px 10px 10px 5px;
+
+    }
+    .main-cart {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns:  1fr;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      width: 40vw;
+      height: 12vh;
+      gap: 20px;
+    }
+  
+  } */
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Default large screens layout */
+    gap: 2rem;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Background image applied here */
+.features-image {
+    background-image: linear-gradient(to bottom, rgb(0, 20, 44) 0%, rgba(0, 20, 44, 0.1) 100%),
+    url('../../assets/1st.jpeg'); /* Use your image path */
+    background-size: 100% 85%; 
+    background-position: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.features-content h5 {
+    color: #00d7a7;
+    trxt-align: left;
+    margin-bottom: 1rem;
+}
+
+.features-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.features-content p {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Icon classes for the feature items */
+.icon-high-quality::before, .icon-effective-protection::before {
+    content: '';
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin-bottom: 1rem;
+}
+
+.icon-high-quality::before {
+    background-image: url('../../assets/lservices.png'); /* Replace with your icon path */
+}
+
+.icon-effective-protection::before {
+    background-image: url('../../assets/protect.png'); /* Replace with your icon path */
+}
+
+.feature-item h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 359px){
+  .features-container {
+    grid-template-columns: 1fr;
+}
+.features-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.features-content h2 {
+    font-size: 1.5rem;
+}
+
+.features-grid {
+    grid-template-columns: 1fr;
+}
+}
+/* Medium screens: 980px to 1400px */
+@media only screen and (min-width: 980px) and (max-width: 1400px) {
+    .features-container {
+        grid-template-columns:1fr 1fr;
+        text-align: center;
+        height:100vh;
+    }
+
+    .features-image {
+      background-size: 100% 80%; 
+      background-position: center;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+}
+
+/* Small screens: 360px to 767px */
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+    .features-content {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      justify-content: center;
+      text-align: left;
+      padding: 0 2rem;
+    }
+    .features-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet screens: 768px to 979px */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    .features-container {
+        grid-template-columns: 1fr;
+      height:100vh;
+    }
+
+    .features-image {
+      background-size: 100% 100%; 
+      background-position: center;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      height: 50vh;
+      width: 100vw;
+      border-radius: 10px;
+      /* background-repeat: no-repeat;
+      height: 50vh;
+      width: 100%; */
+    }
+}
+
+/* Large screens: 1401px and up */
+@media only screen and (min-width: 1401px) {
+    .features-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .features-image {
+      background-size: 100% 85%; 
+      background-position: center;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+}

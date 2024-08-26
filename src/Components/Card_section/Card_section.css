@@ -1,0 +1,123 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Card_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 65vw;
+    color:white;
+    margin-top: 20px; 
+  }
+  
+  
+  .title-section p {
+    font-size: 24px;
+    color:rgb(10,201,172);
+  }
+
+  
+  .title-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding:20px;
+  }
+  
+  .Section-1 {
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(2, 25, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
+  .main-header img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .main-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .Section-1 p {
+    font-size: 16px;
+    color: rgb(130, 143, 160);
+  }
+  
+
+
+
+  @media only screen and (max-width: 767px) {
+    .Card_section {
+      grid-template-columns: repeat(1, 1fr); 
+      width: 90vw; 
+    }
+  
+    .title-section p {
+      font-size: 20px;
+    }
+  
+    .title-section h2 {
+      font-size: 24px;
+    }
+  
+    .Section-1 {
+      padding: 20px;
+    }
+  
+    .main-header img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    .Card_section {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80vw;
+    }
+  
+    .title-section p {
+      font-size: 22px;
+    }
+  
+    .title-section h2 {
+      font-size: 26px;
+    }
+  
+    .Section-1 {
+      padding: 22px;
+    }
+  
+    .main-header img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  @media only screen and (min-width: 980px) and (max-width: 1450px){
+    .Card_section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      width: 85vw;
+      
+      color:white;
+      margin-top: 20px; 
+    }
+  }

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Calibri';
+  src: url('./fonts/Calibri.woff2') format('woff2'),
+       url('./fonts/Calibri.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  background-color: rgb(0, 20, 44);
+  font-family: 'Calibri', sans-serif;
+}
